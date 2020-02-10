@@ -105,6 +105,11 @@ header3.style.marginBottom = "0";
 
 const ctaButton = document.querySelector('button');
 ctaButton.textContent = "Get Started";
+ctaButton.style.backgroundColor = "rgb(24,137,217)";
+ctaButton.style.color = "white";
+ctaButton.style.borderRadius = "4px";
+ctaButton.style.fontSize = "1.2rem";
+
 
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = "img/header-img.png";
