@@ -49,10 +49,14 @@ let nav = document.querySelector("nav");
 nav.style.width = "70%";
 
 
+
+
 const links = document.querySelectorAll('a');
 links.forEach( element => {
-  element.style.color = "rgb(176,176,176)"; 
+  element.style.color = "green"; 
 });
+
+
 
 console.log(links);
 
@@ -162,4 +166,17 @@ email.textContent = "sales@greatidea.io";
 email.style.width = "20%";
 
 const footer = document.querySelector('footer p');
-footer.textContent = "Copyright Great Idea! 2018"
+footer.textContent = "Copyright Great Idea! 2018";
+
+const navigation = document.querySelector("nav");
+const node = document.createElement("a");
+  const textnode = document.createTextNode("Home");
+  node.appendChild(textnode);
+  navigation.prepend(node);
+  node.style.color = "green";
+
+  const node2 = document.createElement("a");
+  const textnode2 = document.createTextNode("Blog");
+  node2.appendChild(textnode2);
+  navigation.append(node2);
+  node2.style.color = "green";
